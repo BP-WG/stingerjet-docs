@@ -25,8 +25,8 @@ let current = account 2
 # - organization index (different participants may use different indexes for the same org)
 # - organization unit
 # - account index - taken from the definition above
-let maxim = seed bf8564fd org 2 board current xpub.... with descriptor-wallet at pandora-server
-let giacomo = seed 88eca544 org 5 board current xpub.... with electrum at desktop-chiasso
+let maxim = seed bf8564fd org 2 board current xpub.... with descriptor-wallet at paris-server
+let giacomo = seed 88eca544 org 5 board current xpub.... with electrum at desktop-home
 let olga = seed 9245a67c org 0 board current xpub.... with bitbox02 at home
 let lawyer = seed 7835dc3d org 122 board current xpub.... with trezor at bank-safe-box
 
