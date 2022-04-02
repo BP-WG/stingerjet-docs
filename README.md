@@ -10,6 +10,8 @@ Design principles:
 
 Example:
 ```bash
+id: wallet1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4
+
 # This means derivation standard used. Here we use m/33/chain/org/unit/account/scope/index
 use lnpbp derivation
 
@@ -41,10 +43,10 @@ descriptors: tr, wsh, shWsh
 # For taproot the order of conditions must follow the probability
 # of their usage (DFS ordering).
 satisfying any:
-  all of ordered boardMembers signed
+  all of boardMembers signed in the order of their pubkeys
   tapret          # here we allow wallets to put tapret commitments
-  at least 2 of ordered boardMembers signed after 2 years
-  at least 1 of ordered boardMembers signed after 3 years
+  at least 2 of boardMembers signed after 2 years in the order of their pubkeys
+  at least 1 of boardMembers signed after 3 years in the order of their pubkeys
   lawyer signed after 5 years
 
 scopes: normal, change, rgb20, rgb21, rgb30
